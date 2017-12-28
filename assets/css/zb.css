@@ -1,0 +1,90 @@
+﻿html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+.body_btl
+{
+    width: 100%;
+    height: 50px;
+    background: #535353;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    position: fixed;
+}
+.body_btl > div
+{
+    position: absolute;
+    height: 20px;
+    width: 15px;
+    background: url(../img/zb/fhbutton2.png);
+    background-size: 100% 100%;
+    top: 14px;
+    left: 18px;
+}
+@media screen and (max-width:330px)
+{
+    .body_KK
+    {
+        width: 90%;
+        padding-top: 5%;
+        margin: 0 auto;
+        height:100%;
+    }
+}
+.bodyK
+{
+    width: 100%;
+    height: calc(100% - 50px);
+    padding-top: 50px;
+}
+@media screen and (min-width:331px)
+{
+    .body_KK
+    {
+        width: 90%;
+        padding-top: 10%;
+        margin: 0 auto;
+    }
+}
+.body_KK_nk
+{
+    width: 100%;
+    height: 230px;
+}
+.marginTop20
+{
+    margin-top: 10%;
+}
+.body_KK_nk > div:first-child
+{
+    width: 100%;
+    height: 20%;
+    background: #edaf1f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 45px;
+}
+.body_KK_nk_xmk
+{
+    width: 99.3%;
+    height: 80%;
+    overflow: auto;
+    border-left: 1px solid #c9c9c9;
+    border-right: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+}
+.body_KK_nk_xmk > div
+{
+    width: 100%;
+    height: 25%;
+    line-height: 45px;
+    color: #a3a3a3;
+    border-bottom: 1px solid #c9c9c9;
+    text-align: center;
+}

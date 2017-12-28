@@ -1,0 +1,111 @@
+﻿html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+.body_btl
+{
+    width: 100%;
+    height: 50px;
+    background: #535353;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    position: fixed;
+}
+.body_btl > div
+{
+    position: absolute;
+    height: 20px;
+    width: 15px;
+    background: url(../img/zb/fhbutton2.png);
+    background-size: 100% 100%;
+    top: 14px;
+    left: 18px;
+}
+.bodyK
+{
+    width: 100%;
+    height: calc(100% - 50px);
+    padding-top: 50px;
+}
+.body_KK
+{
+    width: 90%;
+    height: 80%;
+    padding-top: 15%;
+    margin: 0 auto;
+}
+@media screen and (max-width:350px)
+{
+    .body_KK_nk_btk
+    {
+        width: 40%;
+        height: 130px;
+        margin: 0 auto;
+        padding-top: 2.5em;
+    }
+
+}
+@media screen and (max-width:380px) and (min-width:351px)
+{
+    .body_KK_nk_btk
+    {
+        width: 40%;
+        height: 130px;
+        margin: 0 auto;
+        padding-top: 3.5em;
+    }
+
+}
+@media screen and (min-width:381px)
+{
+
+    .body_KK_nk_btk
+    {
+        width: 40%;
+        height: 130px;
+        margin: 0 auto;
+        padding-top: 4.5em;
+    }
+}
+.body_KK_nk
+{
+    width: 100%;
+    height: 45%;
+    background: #edaf1f;
+}
+.marginTop20
+{
+    margin-top: 10%;
+}
+.body_KK_nk_btk > div:first-child
+{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.body_KK_nk_btk > p
+{
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px auto;
+}
+.bk1
+{
+    background: url(../img/ks/ks.png);
+    background-size: 100% 100%;
+}
+.bk2
+{
+    background: url(../img/ks/zt.png);
+    background-size: 100% 100%;
+}

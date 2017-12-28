@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/Timer Mode.css">
+</head>
+<body>
+    <div class="time_title_frame">
+        <div class="time_title_content">
+            <div class="return" onclick="window.location.href='Time.html'">
+            </div>
+            <div class="time_title">
+                计时模式</div>
+        </div>
+    </div>
+    <div class="time_content_frame">
+        <div class="time_content">
+            <div class="region">
+                <p class="list_word">
+                    时</p>
+                <p class="list_word">
+                    分</p>
+                <p class="list_word">
+                    秒</p>
+            </div>
+            <div id="timekeeper">
+                <div class="aggregate">
+                    <div class="time_list">
+                        <div class="list selected">
+                            <p>
+                                00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aggregate">
+                    <div class="time_list">
+                        <div class="list selected">
+                            <p>
+                                00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aggregate">
+                    <div class="time_list">
+                        <div class="list selected">
+                            <p>
+                                00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button_layout">
+            <button class="start" onclick="controlTimes(0)">
+                开始</button>
+            <button class="small" onclick="controlTimes(1)">
+                停止</button>
+            <button class="small small_right" onclick="controlTimes(2)">
+                重置</button>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../js/myJS.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        setTimes();
+    }
+</script>

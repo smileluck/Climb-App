@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/Time.css">
+</head>
+<body>
+    <div class="timekeeper_title">
+        <div class="timekeeper_title_Layoutword">
+            <p class="timekeeper_title_word change" onclick="countdown()" id="inverted">
+                倒计时</p>
+        </div>
+        <div class="timekeeper_Split_line">
+        </div>
+        <div class="timekeeper_title_Layoutword">
+            <p class="timekeeper_title_word" onclick="just()" id="along">
+                正计时</p>
+        </div>
+    </div>
+    <div class="content display" id="countdown">
+        <div class="countdown_Layout">
+            <div class="region">
+                <p class="list_word">
+                    时</p>
+                <p class="list_word">
+                    分</p>
+                <p class="list_word">
+                    秒</p>
+            </div>
+            <div name="timekeeper" id="djs">
+            </div>
+        </div>
+        <div class="choice_box">
+            <p class="choice">
+                <input type="checkbox" value="just" id="isTime" />到零后正计时</p>
+            <p class="choice choice_right">
+                <input type="checkbox" value="again" checked="checked" id="isAgain" />到零不停止，重新计时</p>
+        </div>
+        <div id="Obs" style="width: 70%; margin: 0px auto 8px auto">
+            <input type="checkbox" value="isObs"/>观摩<input type="text" value="40" />秒
+        </div>
+        <div class="set" onclick="timeSet(true)">
+            设置</div>
+    </div>
+    <div class="content hide" id="just">
+        <div class="countdown_Layout">
+            <div class="region">
+                <p class="list_word">
+                    时</p>
+                <p class="list_word">
+                    分</p>
+                <p class="list_word">
+                    秒</p>
+            </div>
+            <div name="timekeeper" id="zjs">
+            </div>
+        </div>
+        <div class="choice_box">
+            <p class="choice choice_right">
+                <input type="checkbox" value="again" checked="checked" id="isCycle" />循环计时</p>
+        </div>
+        <div class="set" onclick="timeSet(false)">
+            设置</div>
+    </div>
+    <div class="set" onclick='window.location.href="mode.html"'>
+        返回</div>
+</body>
+</html>
+<script type="text/javascript" src="../js/Time.js"></script>
+<script type="text/javascript" src="../js/myJS.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        timekeeper = document.getElementsByName("timekeeper")[0];
+        establish(timekeeper);
+        itouch(this.time_list_1, this.time_list_2, this.time_list_3);
+        checkTimeView()
+    }
+</script>
